@@ -1,0 +1,90 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+:root{
+    --primary:  #fb6006;
+    --secundary: #9090f6;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.calculadora {
+  width: 450px;
+  height: 600px;
+  padding: 50px;
+
+  background-color: var(--primary);
+  border-radius: 50px;
+  box-shadow: 0px 4px 10px #00000088; /* rgba */
+}
+
+.display {
+    width: 100%;
+    height: 70px;
+    margin-bottom: 30px;
+    /*display: flex;
+    justify-content: flex-end;
+    align-items: center; */
+    padding: 15px;
+    text-align: right;
+
+    background-color: #fff;
+    border-radius: 50px;
+    font-size: 36px;
+}
+
+/* Botão */
+button {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background-color: #fff;
+  font-size: 26px;
+  border: none;
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+button:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+.container-botoes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    justify-items: center;
+}
+
+.logo{
+    width: 100%;
+    height: 100px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.historico{
+    color: #fff;
+    height: 600px;
+    margin-left: 10px;
+}
+
+.title{
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-items: flex-start;
+}
